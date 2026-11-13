@@ -6,9 +6,10 @@ export type Columns = {
   iso_alpha_3: string;
   date: string;
   confirmed: string;
+  deaths: string;
+  recovered: string;
   administrative_area_level_1: string;
 };
-
 export function toNumberOrNull(value: string): number | null {
   if (value === "") return null;
   return Number(value);

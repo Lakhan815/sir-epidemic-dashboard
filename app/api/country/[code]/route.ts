@@ -16,6 +16,8 @@ export async function GET(
     rows: rows.map((r) => ({
       date: r.date,
       confirmed: toNumberOrNull(r.confirmed),
+      deaths: toNumberOrNull(r.deaths),
+      recovered: toNumberOrNull(r.recovered),
     })),
   });
 }
